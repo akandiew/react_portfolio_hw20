@@ -4,18 +4,21 @@ import About from "./pages/About"
 import Nav from "./components/Nav";
 // import logo from './logo.svg';
 import './App.css';
+import Home from "./pages/Home";
 
 function App() {
   return (
-    <Router>
-      <div className="App">
-        <Nav />
+      <div className="container">
+      <Router>
+
+        <Nav></Nav>
         <Switch>
-          <Route exact path={["/", "about"]} />
-/            <About></About>
+          <Route exact path="/"><Home /></Route>
+          <Route exact path="/About"><About /></Route>
         </Switch>
+      </Router>
       </div>
-    </Router>
+
   );
 }
 

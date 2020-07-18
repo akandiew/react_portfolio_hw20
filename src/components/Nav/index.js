@@ -5,6 +5,8 @@ function Nav() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
       <a className="navbar-brand" href="/">
+        Home
+
         {/* Andy's Project List
         <Link to="/about"></Link>
         <li>About</li>
@@ -12,6 +14,8 @@ function Nav() {
         <li>Shows-n-Tell</li>
         <li></li> */}
       </a>
+
+      <a href="/About">About</a>
     </nav>
   );
 }

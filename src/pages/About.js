@@ -1,14 +1,15 @@
 import React from 'react';
-import {Button} from "@material-ui/core";
-import {Grid} from "@material-ui/core";
+import { Button } from "@material-ui/core";
+import { Grid } from "@material-ui/core";
 import Thumbnail from "../components/Thumbnail";
 import { Project } from '../components/Project';
 
 function About() {
   const Project = [{
-    title: "this_project",
-    link: "",
-    description: "",
+    title: "this project title",
+    linkDeploy: "URL to deployment",
+    linkGithub: "URL to GitHub",
+    description: "project description",
 
 
   }]
@@ -17,6 +18,8 @@ function About() {
 
     <div>
         <h1>Andy's Project Summary</h1>
+        <Button>see GitHub profile</Button>
+        <Button>see LinkedIn profile</Button>
         {/* <Button>View Details</Button> */}
         <Grid container>
           {/* <Grid item xs={4}><Thumbnail></Thumbnail></Grid>
